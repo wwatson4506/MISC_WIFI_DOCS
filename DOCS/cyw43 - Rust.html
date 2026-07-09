@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://docs.rs/cyw43/latest/cyw43/ -->
+<html lang="en" data-theme="light" data-docs-rs-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="cyw43"><title>cyw43 - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="/-/rustdoc.static/${f}">`).join(""))</script><link rel="preload" as="font" type="font/woff2" href="https://docs.rs/-/rustdoc.static/SourceSerif4-Regular-6b053e98.ttf.woff2"><link rel="preload" as="font" type="font/woff2" href="https://docs.rs/-/rustdoc.static/FiraSans-Italic-81dc35de.woff2"><link rel="preload" as="font" type="font/woff2" href="https://docs.rs/-/rustdoc.static/FiraSans-Regular-0fe48ade.woff2"><link rel="preload" as="font" type="font/woff2" href="https://docs.rs/-/rustdoc.static/FiraSans-MediumItalic-ccf7e434.woff2"><link rel="preload" as="font" type="font/woff2" href="https://docs.rs/-/rustdoc.static/FiraSans-Medium-e1aa3f0a.woff2"><link rel="preload" as="font" type="font/woff2" href="https://docs.rs/-/rustdoc.static/SourceCodePro-Regular-8badfe75.ttf.woff2"><link rel="preload" as="font" type="font/woff2" href="https://docs.rs/-/rustdoc.static/SourceCodePro-Semibold-aa29a496.ttf.woff2"><link rel="stylesheet" href="./cyw43 - Rust_files/normalize-9960930a.css"><link rel="stylesheet" href="./cyw43 - Rust_files/vendored.css" media="all"><link rel="stylesheet" href="./cyw43 - Rust_files/rustdoc-17e0aaed.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="/-/rustdoc.static/" data-current-crate="cyw43" data-themes="" data-resource-suffix="-20260320-1.96.0-nightly-ac7f9ec7d" data-rustdoc-version="1.96.0-nightly (ac7f9ec7d 2026-03-20)" data-channel="nightly" data-search-js="search-63369b7b.js" data-stringdex-js="stringdex-2da4960a.js" data-settings-js="settings-170eb4bf.js"><script src="./cyw43 - Rust_files/storage-41dd4d93.js"></script><script defer="" src="./cyw43 - Rust_files/crates-20260320-1.96.0-nightly-ac7f9ec7d.js"></script><script defer="" src="./cyw43 - Rust_files/main-5013f961.js"></script><noscript><link rel="stylesheet" href="/-/rustdoc.static/noscript-f7c3ffd8.css"></noscript><link rel="alternate icon" type="image/png" href="https://docs.rs/-/rustdoc.static/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="https://docs.rs/-/rustdoc.static/favicon-044be391.svg"><link rel="stylesheet" href="./cyw43 - Rust_files/rustdoc-2025-08-20.css" media="all"><link rel="stylesheet" href="./cyw43 - Rust_files/font-awesome.css" media="all">
+
+<link rel="search" href="https://docs.rs/-/static/opensearch.xml" type="application/opensearchdescription+xml" title="Docs.rs">
+
+<script type="text/javascript">(function() {
+    function applyTheme(theme) {
+        if (theme) {
+            document.documentElement.dataset.docsRsTheme = theme;
+        }
+    }
+
+    window.addEventListener("storage", ev => {
+        if (ev.key === "rustdoc-theme") {
+            applyTheme(ev.newValue);
+        }
+    });
+
+    // see ./storage-change-detection.html for details
+    window.addEventListener("message", ev => {
+        if (ev.data && ev.data.storage && ev.data.storage.key === "rustdoc-theme") {
+            applyTheme(ev.data.storage.value);
+        }
+    });
+
+    applyTheme(window.localStorage.getItem("rustdoc-theme"));
+})();</script></head><div style="display: none; position: fixed; width: 100%; height: 100%; z-index: 1;"></div><body class="rustdoc-page">
+<div class="nav-container">
+    <div class="container">
+        <div class="pure-menu pure-menu-horizontal" role="navigation" aria-label="Main navigation">
+            <form action="https://docs.rs/releases/search" method="GET" id="nav-search-form" class="landing-search-form-nav  ">
+
+                
+                <a href="https://docs.rs/" class="pure-menu-heading pure-menu-link docsrs-logo" aria-label="Docs.rs">
+                    <span title="Docs.rs"><span class="fa fa-solid fa-cubes " aria-hidden="true"></span></span>
+                    <span class="title">Docs.rs</span>
+                </a><ul class="pure-menu-list">
+    <script id="crate-metadata" type="application/json">
+        
+        {
+            "name": "cyw43",
+            "version": "0.7.0"
+        }
+    </script><li class="pure-menu-item pure-menu-has-children crate-dropdown">
+            <a href="https://docs.rs/cyw43/latest/cyw43/#" class="pure-menu-link crate-name" title="Rust driver for the CYW43439 WiFi chip, used in the Raspberry Pi Pico W." aria-haspopup="menu">
+                <span class="fa fa-solid fa-cube " aria-hidden="true"></span>
+                <span class="title">cyw43-0.7.0</span>
+            </a><div class="pure-menu-children package-details-menu" role="menu">
+                
+                <ul class="pure-menu-list menu-item-divided">
+                    <li class="pure-menu-heading" id="crate-title">
+                        cyw43 0.7.0
+                        <span id="clipboard" class="svg-clipboard" title="Copy crate name and version information"></span>
+                    </li><li class="pure-menu-item">
+                        <a href="https://docs.rs/cyw43/0.7.0/cyw43/" class="pure-menu-link description" id="permalink" title="Get a link to this specific version"><span class="fa fa-solid fa-link " aria-hidden="true"></span> Permalink
+                        </a>
+                    </li><li class="pure-menu-item">
+                        <a href="https://docs.rs/crate/cyw43/latest" class="pure-menu-link description" title="See cyw43 in docs.rs">
+                            <span class="fa fa-solid fa-cube " aria-hidden="true"></span> Docs.rs crate page
+                        </a>
+                    </li><li class="pure-menu-item">
+                            <span class="pure-menu-link description license"><span class="fa fa-solid fa-scale-unbalanced-flip " aria-hidden="true"></span>
+                            <a href="https://spdx.org/licenses/MIT" class="pure-menu-sublink">MIT</a> OR <a href="https://spdx.org/licenses/Apache-2.0" class="pure-menu-sublink">Apache-2.0</a></span>
+                        </li></ul>
+
+                <div class="pure-g menu-item-divided">
+                    <div class="pure-u-1-2 right-border">
+                        <ul class="pure-menu-list">
+                            <li class="pure-menu-heading">Links</li>
+
+                            <li class="pure-menu-item">
+                                    <a href="https://docs.embassy.dev/cyw43" title="Canonical documentation" class="pure-menu-link">
+                                        <span class="fa fa-regular fa-file-lines " aria-hidden="true"></span> Documentation
+                                    </a>
+                                </li><li class="pure-menu-item">
+                                    <a href="https://github.com/embassy-rs/embassy" class="pure-menu-link">
+                                        <span class="fa fa-solid fa-code-branch " aria-hidden="true"></span> Repository
+                                    </a>
+                                </li><li class="pure-menu-item">
+                                <a href="https://crates.io/crates/cyw43" class="pure-menu-link" title="See cyw43 in crates.io">
+                                    <span class="fa fa-solid fa-cube " aria-hidden="true"></span> crates.io
+                                </a>
+                            </li>
+
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://docs.rs/crate/cyw43/latest/source/" title="Browse source of cyw43-0.7.0" class="pure-menu-link">
+                                    <span class="fa fa-solid fa-folder-open " aria-hidden="true"></span> Source
+                                </a>
+                            </li>
+                        </ul>
+                    </div><div class="pure-u-1-2">
+                        <ul class="pure-menu-list" id="topbar-owners">
+                            <li class="pure-menu-heading">Owners</li><li class="pure-menu-item">
+                                    <a href="https://crates.io/users/Dirbaio" class="pure-menu-link">
+                                        <span class="fa fa-solid fa-user " aria-hidden="true"></span> Dirbaio
+                                    </a>
+                                </li><li class="pure-menu-item">
+                                    <a href="https://crates.io/teams/github:embassy-rs:crates-io" class="pure-menu-link">
+                                        <span class="fa fa-solid fa-user " aria-hidden="true"></span> github:embassy-rs:crates-io
+                                    </a>
+                                </li></ul>
+                    </div>
+                </div>
+
+                <div class="pure-g menu-item-divided">
+                    <div class="pure-u-1-2 right-border">
+                        <ul class="pure-menu-list">
+                            <li class="pure-menu-heading">Dependencies</li>
+
+                            
+                            <li class="pure-menu-item">
+                                <div class="pure-menu pure-menu-scrollable sub-menu" tabindex="-1">
+                                    <ul class="pure-menu-list">
+                                        <li class="pure-menu-item"><a href="https://docs.rs/aligned/%5E0.4.3/" class="pure-menu-link">
+                aligned ^0.4.3
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/bt-hci/%5E0.8/" class="pure-menu-link">
+                bt-hci ^0.8
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                        <i>optional</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/cortex-m/%5E0.7.6/" class="pure-menu-link">
+                cortex-m ^0.7.6
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/cortex-m-rt/%5E0.7.0/" class="pure-menu-link">
+                cortex-m-rt ^0.7.0
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/defmt/%5E1.0.1/" class="pure-menu-link">
+                defmt ^1.0.1
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                        <i>optional</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/derive_more/%5E2.1.1/" class="pure-menu-link">
+                derive_more ^2.1.1
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                        <i>optional</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/embassy-futures/%5E0.1.2/" class="pure-menu-link">
+                embassy-futures ^0.1.2
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/embassy-net-driver-channel/%5E0.4.0/" class="pure-menu-link">
+                embassy-net-driver-channel ^0.4.0
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/embassy-sync/%5E0.8.0/" class="pure-menu-link">
+                embassy-sync ^0.8.0
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/embassy-time/%5E0.5.1/" class="pure-menu-link">
+                embassy-time ^0.5.1
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/embedded-hal/%5E1.0/" class="pure-menu-link">
+                embedded-hal ^1.0
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/embedded-hal-async/%5E1.0/" class="pure-menu-link">
+                embedded-hal-async ^1.0
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/embedded-io-async/%5E0.7.0/" class="pure-menu-link">
+                embedded-io-async ^0.7.0
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                        <i>optional</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/futures/%5E0.3.17/" class="pure-menu-link">
+                futures ^0.3.17
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/heapless/%5E0.9/" class="pure-menu-link">
+                heapless ^0.9
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                
+            </a>
+        </li><li class="pure-menu-item"><a href="https://docs.rs/log/%5E0.4.17/" class="pure-menu-link">
+                log ^0.4.17
+                
+                    <i class="dependencies normal">normal</i>
+                    
+                        <i>optional</i>
+                    
+                
+            </a>
+        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pure-u-1-2">
+                        <ul class="pure-menu-list">
+                            <li class="pure-menu-heading">Versions</li>
+
+                            <li class="pure-menu-item">
+                                <div class="pure-menu pure-menu-scrollable sub-menu" id="releases-list" tabindex="-1" data-url="/crate/cyw43/latest/menus/releases/cyw43/">
+                                    <span class="rotate"><span class="fa fa-solid fa-spinner " aria-hidden="true"></span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                    
+                    <div class="pure-g">
+                        <div class="pure-u-1">
+                            <ul class="pure-menu-list">
+                                <li>
+                                    <a href="https://docs.rs/crate/cyw43/latest" class="pure-menu-link">
+                                        <b>100%</b>
+                                        of the crate is documented
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div></div>
+        </li><li class="pure-menu-item pure-menu-has-children">
+                <a href="https://docs.rs/cyw43/latest/cyw43/#" class="pure-menu-link" aria-label="Platform" aria-haspopup="menu">
+                    <span class="fa fa-solid fa-gears " aria-hidden="true"></span>
+                    <span class="title">Platform</span>
+                </a>
+
+                
+                <ul class="pure-menu-children" id="platforms" data-url="/crate/cyw43/latest/menus/platforms/cyw43/" role="menu"><li class="pure-menu-item">
+            <a href="https://docs.rs/crate/cyw43/latest/target-redirect/aarch64-apple-darwin/cyw43/" class="pure-menu-link" data-fragment="retain" rel="nofollow">aarch64-apple-darwin</a>
+        </li><li class="pure-menu-item">
+            <a href="https://docs.rs/crate/cyw43/latest/target-redirect/aarch64-unknown-linux-gnu/cyw43/" class="pure-menu-link" data-fragment="retain" rel="nofollow">aarch64-unknown-linux-gnu</a>
+        </li><li class="pure-menu-item">
+            <a href="https://docs.rs/crate/cyw43/latest/target-redirect/i686-pc-windows-msvc/cyw43/" class="pure-menu-link" data-fragment="retain" rel="nofollow">i686-pc-windows-msvc</a>
+        </li><li class="pure-menu-item">
+            <a href="https://docs.rs/crate/cyw43/latest/target-redirect/x86_64-pc-windows-msvc/cyw43/" class="pure-menu-link" data-fragment="retain" rel="nofollow">x86_64-pc-windows-msvc</a>
+        </li><li class="pure-menu-item">
+            <a href="https://docs.rs/crate/cyw43/latest/target-redirect/cyw43/" class="pure-menu-link" data-fragment="retain" rel="nofollow">x86_64-unknown-linux-gnu</a>
+        </li></ul>
+            </li><li class="pure-menu-item">
+                <a href="https://docs.rs/crate/cyw43/latest/features" title="Browse available feature flags of cyw43-0.7.0" class="pure-menu-link">
+                    <span class="fa fa-solid fa-flag " aria-hidden="true"></span>
+                    <span class="title">Feature flags</span>
+                </a>
+            </li>
+        
+    
+</ul><div class="spacer"></div>
+                
+                <div id="abnormalities" class=""></div>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children">
+                        <a href="https://docs.rs/cyw43/latest/cyw43/#" class="pure-menu-link" aria-label="docs.rs" aria-haspopup="menu">docs.rs</a>
+                        <ul class="pure-menu-children aligned-icons" role="menu"><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/about"><span class="fa fa-solid fa-circle-info " aria-hidden="true"></span> About docs.rs</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/about/badges"><span class="fa fa-brands fa-fonticons " aria-hidden="true"></span> Badges</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/about/builds"><span class="fa fa-solid fa-gears " aria-hidden="true"></span> Builds</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/about/metadata"><span class="fa fa-solid fa-table " aria-hidden="true"></span> Metadata</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/about/redirections"><span class="fa fa-solid fa-road " aria-hidden="true"></span> Shorthand URLs</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/about/download"><span class="fa fa-solid fa-download " aria-hidden="true"></span> Download</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/about/rustdoc-json"><span class="fa fa-solid fa-file-code " aria-hidden="true"></span> Rustdoc JSON</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://docs.rs/releases/queue"><span class="fa fa-solid fa-gears " aria-hidden="true"></span> Build queue</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="https://foundation.rust-lang.org/policies/privacy-policy/#docs.rs" target="_blank"><span class="fa fa-solid fa-shield-halved " aria-hidden="true"></span> Privacy policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="pure-menu-list"><li class="pure-menu-item pure-menu-has-children">
+                        <a href="https://docs.rs/cyw43/latest/cyw43/#" class="pure-menu-link" aria-label="Rust" aria-haspopup="menu">Rust</a>
+                        <ul class="pure-menu-children" role="menu">
+                            <li class="pure-menu-item"><a class="pure-menu-link" href="https://www.rust-lang.org/" target="_blank">Rust website</a></li>
+                            <li class="pure-menu-item"><a class="pure-menu-link" href="https://doc.rust-lang.org/book/" target="_blank">The Book</a></li>
+
+                            <li class="pure-menu-item"><a class="pure-menu-link" href="https://doc.rust-lang.org/std/" target="_blank">Standard Library API Reference</a></li>
+
+                            <li class="pure-menu-item"><a class="pure-menu-link" href="https://doc.rust-lang.org/rust-by-example/" target="_blank">Rust by Example</a></li>
+
+                            <li class="pure-menu-item"><a class="pure-menu-link" href="https://doc.rust-lang.org/cargo/guide/" target="_blank">The Cargo Guide</a></li>
+
+                            <li class="pure-menu-item"><a class="pure-menu-link" href="https://doc.rust-lang.org/nightly/clippy" target="_blank">Clippy Documentation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div id="search-input-nav">
+                    <label for="nav-search">
+                        <span class="fa fa-solid fa-magnifying-glass " aria-hidden="true"></span>
+                    </label>
+
+                    
+                    
+                    <input id="nav-search" name="query" type="text" aria-label="Find crate by search query" tabindex="-1" placeholder="Find crate">
+                </div>
+            </form>
+        </div>
+    </div>
+</div><div class="rustdoc mod crate container-rustdoc" id="rustdoc_body_wrapper" tabindex="-1"><script async="" src="./cyw43 - Rust_files/menu.js"></script>
+<script async="" src="./cyw43 - Rust_files/index.js"></script>
+
+<iframe src="./cyw43 - Rust_files/storage-change-detection.html" width="0" height="0" style="display: none"></iframe><a class="skip-main-content" href="https://docs.rs/cyw43/latest/cyw43/#main-content">Skip to main content</a><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><template shadowrootmode="open">
+        <slot name="sidebar-menu-toggle"></slot>
+        <slot></slot>
+        <slot name="settings-menu"></slot>
+        <slot name="help-menu"></slot>
+        </template>
+        <button class="sidebar-menu-toggle" slot="sidebar-menu-toggle" title="show sidebar">
+        </button>
+        <div class="settings-menu" slot="settings-menu" tabindex="-1">
+            <a href="https://docs.rs/cyw43/latest/settings.html"><span class="label">Settings</span></a>
+        </div>
+        <div class="help-menu" slot="help-menu" tabindex="-1">
+            <a href="https://docs.rs/cyw43/latest/help.html"><span class="label">Help</span></a>
+        </div>
+        <h2><a href="https://docs.rs/cyw43/latest/cyw43/#">Crate cyw43</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="https://docs.rs/cyw43/latest/cyw43/index.html">cyw43</a><span class="version">0.7.0</span></h2></div><div class="sidebar-elems"><ul class="block"><li><a id="all-types" href="https://docs.rs/cyw43/latest/cyw43/all.html">All Items</a></li></ul><section id="rustdoc-toc"><h3><a href="https://docs.rs/cyw43/latest/cyw43/#">Sections</a></h3><ul class="block top-toc"><li><a href="https://docs.rs/cyw43/latest/cyw43/#cyw43" title="cyw43">cyw43</a><ul><li><a href="https://docs.rs/cyw43/latest/cyw43/#features" title="Features">Features</a></li><li><a href="https://docs.rs/cyw43/latest/cyw43/#running-the-wifi-examples" title="Running the WiFi examples">Running the WiFi examples</a></li></ul></li></ul><h3><a href="https://docs.rs/cyw43/latest/cyw43/#macros">Crate Items</a></h3><ul class="block"><li><a href="https://docs.rs/cyw43/latest/cyw43/#macros" title="Macros">Macros</a></li><li><a href="https://docs.rs/cyw43/latest/cyw43/#structs" title="Structs">Structs</a></li><li><a href="https://docs.rs/cyw43/latest/cyw43/#enums" title="Enums">Enums</a></li><li><a href="https://docs.rs/cyw43/latest/cyw43/#traits" title="Traits">Traits</a></li><li><a href="https://docs.rs/cyw43/latest/cyw43/#functions" title="Functions">Functions</a></li><li><a href="https://docs.rs/cyw43/latest/cyw43/#types" title="Type Aliases">Type Aliases</a></li></ul></section><div id="rustdoc-modnav"><h3>Crates</h3><ul class="block crate"><li class="current"><a href="https://docs.rs/cyw43/latest/cyw43/index.html">cyw43</a></li></ul></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content" tabindex="-1"><div class="main-heading"><div id="sidebar-button"><a href="https://docs.rs/cyw43/latest/cyw43/all.html" title="show sidebar"></a></div><h1>Crate <span>cyw43</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><span class="sub-heading"><a class="src" href="https://docs.rs/cyw43/latest/src/cyw43/lib.rs.html#1-371">Source</a> </span><rustdoc-toolbar>
+        <div id="search-button" tabindex="-1">
+            <a href="https://docs.rs/cyw43/latest/cyw43/?search="><span class="label">Search</span></a>
+        </div>
+        <div class="settings-menu" tabindex="-1">
+            <a href="https://docs.rs/cyw43/latest/settings.html"><span class="label">Settings</span></a>
+        </div>
+        <div class="help-menu" tabindex="-1">
+            <a href="https://docs.rs/cyw43/latest/help.html"><span class="label">Help</span></a>
+        </div>
+        <button id="toggle-all-docs" title="Collapse sections (shift-click to also collapse impl blocks)"><span class="label">Summary</span></button></rustdoc-toolbar></div><details class="toggle top-doc" open=""><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><h2 id="cyw43"><a class="doc-anchor" href="https://docs.rs/cyw43/latest/cyw43/#cyw43">§</a>cyw43</h2>
+<p>Rust driver for the CYW43439 wifi+bluetooth chip. Implementation based on <a href="https://github.com/Infineon/wifi-host-driver">Infineon/wifi-host-driver</a>.</p>
+<p>Works on the following boards:</p>
+<ul>
+<li>Raspberry Pi Pico W (RP2040)</li>
+<li>Raspberry Pi Pico 2 W (RP2350A)</li>
+<li>Pimoroni Pico Plus 2 W (RP2350B)</li>
+<li>Any board with Raspberry Pi RM2 radio module.</li>
+<li>Any board with the CYW43439 chip, and possibly others if the protocol is similar enough.</li>
+</ul>
+<h3 id="features"><a class="doc-anchor" href="https://docs.rs/cyw43/latest/cyw43/#features">§</a>Features</h3>
+<p>Working:</p>
+<ul>
+<li>WiFi support
+<ul>
+<li>Station mode (joining an AP).</li>
+<li>AP mode (creating an AP)</li>
+<li>Scanning</li>
+<li>Sending and receiving Ethernet frames.</li>
+<li>Using the default MAC address.</li>
+<li><a href="https://embassy.dev/"><code>embassy-net</code></a> integration.</li>
+<li>RP2040 PIO driver for the nonstandard half-duplex SPI used in the Pico W.</li>
+<li>Using IRQ for device events, no busy polling.</li>
+<li>GPIO support (for LED on the Pico W).</li>
+</ul>
+</li>
+<li>Bluetooth support
+<ul>
+<li>Bluetooth Classic + LE HCI commands.</li>
+<li>Concurrent operation with WiFi.</li>
+<li>Implements the <a href="https://crates.io/crates/bt-hci">bt-hci</a> controller traits.</li>
+<li>Works with the <a href="https://github.com/embassy-rs/trouble">TrouBLE</a> bluetooth LE stack. Check its repo for examples using <code>cyw43</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="running-the-wifi-examples"><a class="doc-anchor" href="https://docs.rs/cyw43/latest/cyw43/#running-the-wifi-examples">§</a>Running the WiFi examples</h3>
+<ul>
+<li>Install <code>probe-rs</code> following the instructions at <a href="https://probe.rs/">https://probe.rs</a>.</li>
+<li><code>cd examples/rp</code></li>
+</ul>
+<h4 id="example-1-scan-the-wifi-stations"><a class="doc-anchor" href="https://docs.rs/cyw43/latest/cyw43/#example-1-scan-the-wifi-stations">§</a>Example 1: Scan the wifi stations</h4>
+<ul>
+<li><code>cargo run --release --bin wifi_scan</code></li>
+</ul>
+<h4 id="example-2-create-an-access-point-ip-and-credentials-in-the-code"><a class="doc-anchor" href="https://docs.rs/cyw43/latest/cyw43/#example-2-create-an-access-point-ip-and-credentials-in-the-code">§</a>Example 2: Create an access point (IP and credentials in the code)</h4>
+<ul>
+<li><code>cargo run --release --bin wifi_ap_tcp_server</code></li>
+</ul>
+<h4 id="example-3-connect-to-an-existing-network-and-create-a-server"><a class="doc-anchor" href="https://docs.rs/cyw43/latest/cyw43/#example-3-connect-to-an-existing-network-and-create-a-server">§</a>Example 3: Connect to an existing network and create a server</h4>
+<ul>
+<li><code>cargo run --release --bin wifi_tcp_server</code></li>
+</ul>
+<p>After a few seconds, you should see that DHCP picks up an IP address like this</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="number">11.944489 </span>DEBUG Acquired IP configuration:
+<span class="number">11.944517 </span>DEBUG    IP address:      <span class="number">192.168</span>.<span class="number">0.250</span>/<span class="number">24
+11.944620 </span>DEBUG    Default gateway: <span class="number">192.168</span>.<span class="number">0.33
+11.944722 </span>DEBUG    DNS server <span class="number">0</span>:    <span class="number">192.168</span>.<span class="number">0.33</span></code></pre></div>
+<p>This example implements a TCP echo server on port 1234. You can try connecting to it with:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code>nc <span class="number">192.168</span>.<span class="number">0.250 1234</span></code></pre></div>
+<p>Send it some data, you should see it echoed back and printed in the firmware’s logs.</p>
+</div></details><h2 id="macros" class="section-header">Macros<a href="https://docs.rs/cyw43/latest/cyw43/#macros" class="anchor">§</a></h2><dl class="item-table"><dt><a class="macro" href="https://docs.rs/cyw43/latest/cyw43/macro.aligned_bytes.html" title="macro cyw43::aligned_bytes">aligned_<wbr>bytes</a></dt><dd>Include bytes aligned to A4 in the binary</dd></dl><h2 id="structs" class="section-header">Structs<a href="https://docs.rs/cyw43/latest/cyw43/#structs" class="anchor">§</a></h2><dl class="item-table"><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.A4.html" title="struct cyw43::A4">A4</a></dt><dd>4-byte alignment</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.Aligned.html" title="struct cyw43::Aligned">Aligned</a></dt><dd>A newtype with alignment of at least <code>A</code> bytes</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.BssInfo.html" title="struct cyw43::BssInfo">BssInfo</a></dt><dd>Wifi Scan Result</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.Control.html" title="struct cyw43::Control">Control</a></dt><dd>Control driver.</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.JoinOptions.html" title="struct cyw43::JoinOptions">Join<wbr>Options</a></dt><dd>Options for <a href="https://docs.rs/cyw43/latest/cyw43/struct.Control.html#method.join" title="method cyw43::Control::join"><code>Control::join</code></a>.</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.Runner.html" title="struct cyw43::Runner">Runner</a></dt><dd>Driver communicating with the WiFi chip.</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.ScanOptions.html" title="struct cyw43::ScanOptions">Scan<wbr>Options</a></dt><dd>Scan options.</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.Scanner.html" title="struct cyw43::Scanner">Scanner</a></dt><dd>WiFi network scanner.</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.SdioBus.html" title="struct cyw43::SdioBus">SdioBus</a></dt><dd>Doc</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.SpiBus.html" title="struct cyw43::SpiBus">SpiBus</a></dt><dd>Doc</dd><dt><a class="struct" href="https://docs.rs/cyw43/latest/cyw43/struct.State.html" title="struct cyw43::State">State</a></dt><dd>Driver state.</dd></dl><h2 id="enums" class="section-header">Enums<a href="https://docs.rs/cyw43/latest/cyw43/#enums" class="anchor">§</a></h2><dl class="item-table"><dt><a class="enum" href="https://docs.rs/cyw43/latest/cyw43/enum.AddMulticastAddressError.html" title="enum cyw43::AddMulticastAddressError">AddMulticast<wbr>Address<wbr>Error</a></dt><dd>Multicast errors.</dd><dt><a class="enum" href="https://docs.rs/cyw43/latest/cyw43/enum.JoinAuth.html" title="enum cyw43::JoinAuth">Join<wbr>Auth</a></dt><dd>Authentication type, used in <a href="https://docs.rs/cyw43/latest/cyw43/struct.JoinOptions.html#structfield.auth" title="field cyw43::JoinOptions::auth"><code>JoinOptions::auth</code></a>.</dd><dt><a class="enum" href="https://docs.rs/cyw43/latest/cyw43/enum.JoinError.html" title="enum cyw43::JoinError">Join<wbr>Error</a></dt><dd>Join errors.</dd><dt><a class="enum" href="https://docs.rs/cyw43/latest/cyw43/enum.PowerManagementMode.html" title="enum cyw43::PowerManagementMode">Power<wbr>Management<wbr>Mode</a></dt><dd>Power management modes.</dd><dt><a class="enum" href="https://docs.rs/cyw43/latest/cyw43/enum.ScanType.html" title="enum cyw43::ScanType">Scan<wbr>Type</a></dt><dd>WiFi scan type.</dd></dl><h2 id="traits" class="section-header">Traits<a href="https://docs.rs/cyw43/latest/cyw43/#traits" class="anchor">§</a></h2><dl class="item-table"><dt><a class="trait" href="https://docs.rs/cyw43/latest/cyw43/trait.SdioBusCyw43.html" title="trait cyw43::SdioBusCyw43">Sdio<wbr>BusCyw43</a></dt><dd>Custom Spi Trait that <em>only</em> supports the bus operation of the cyw43
+Implementors are expected to hold the CS pin low during an operation.</dd><dt><a class="trait" href="https://docs.rs/cyw43/latest/cyw43/trait.SpiBusCyw43.html" title="trait cyw43::SpiBusCyw43">SpiBus<wbr>Cyw43</a></dt><dd>Custom Spi Trait that <em>only</em> supports the bus operation of the cyw43
+Implementors are expected to hold the CS pin low during an operation.</dd></dl><h2 id="functions" class="section-header">Functions<a href="https://docs.rs/cyw43/latest/cyw43/#functions" class="anchor">§</a></h2><dl class="item-table"><dt><a class="fn" href="https://docs.rs/cyw43/latest/cyw43/fn.Aligned.html" title="fn cyw43::Aligned">Aligned</a></dt><dd>Changes the alignment of <code>value</code> to be at least <code>A</code> bytes</dd><dt><a class="fn" href="https://docs.rs/cyw43/latest/cyw43/fn.new.html" title="fn cyw43::new">new</a></dt><dd>Create a new instance of the CYW43 driver.</dd><dt><a class="fn" href="https://docs.rs/cyw43/latest/cyw43/fn.new_sdio.html" title="fn cyw43::new_sdio">new_<wbr>sdio</a></dt><dd>Create a new instance of the CYW43 driver.</dd></dl><h2 id="types" class="section-header">Type Aliases<a href="https://docs.rs/cyw43/latest/cyw43/#types" class="anchor">§</a></h2><dl class="item-table"><dt><a class="type" href="https://docs.rs/cyw43/latest/cyw43/type.NetDriver.html" title="type cyw43::NetDriver">NetDriver</a></dt><dd>Embassy-net driver.</dd></dl></section><section id="alternative-display" class="content hidden"></section><section id="not-displayed" class="hidden"><section id="search"><div class="main-heading search-results-main-heading"><nav class="sub">
+                    <form class="search-form loading">
+                        <span></span> <!-- This empty span is a hacky fix for Safari: see #93184 -->
+                        <input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Type ‘S’ or ‘/’ to search, ‘?’ for more options…" type="search">
+                    </form>
+                </nav><div class="search-switcher"></div></div><div class="search-out"></div></section></section></div></main></div></body></html>
